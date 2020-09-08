@@ -1,0 +1,12 @@
+Realizar una aplicación para simular un sistema de control de una librería
+-clase libro
+    Título
+    Autor
+    ID
+
+    método para dar de alta liros nuevos
+    método para eliminar libros
+    método para modificar un libro
+    método para búsquedas
+
+    los métodos serán realizados mediante la propiedad ID
