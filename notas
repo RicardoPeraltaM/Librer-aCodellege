@@ -10,3 +10,40 @@ Realizar una aplicación para simular un sistema de control de una librería
     método para búsquedas
 
     los métodos serán realizados mediante la propiedad ID
+/////////////////////////////////////////////////////////
+        LOCALSTORAGE
+-Nos permite almacenar datos que persisten sin importar que el navegador se cierre o que el equipoo se apague
+-Los datos almacenados se identifican por medio de un Key(clave) y un valor
+-Tiene un rango de almacenamiento de hasta 5MB
+-La información se almacena directamente en el navegador
+-A diferencia de cookies no se envía como petición HTTP (al servidor)
+
+        Localstorage no elimina informacón en automatico a diferencia de SESSIONSTORAGE
+
+ 0  1  2  3  4
+[1, 2, 4, 5, 6] length = 5
+
+['','','','',]
+[true,false,true]
+
+                Object Persona
+Encuestados[{nombre:'', apellido:''}, {nombre:'', apellido:''}, {nombre:'', apellido:''}, {nombre:'', apellido:''}]
+un array de Objetos se llama JSON
+
+////////////////////////////////////////////////////////////////
+|   |  Ricardo Peralta    |                                          |
+.trim() método de JS que corta los espacios vacíos a la izquierda y derecha de un String
+
+////////////////////////////////////////////////////////////////
+
+firstChild: Regresa el primer nodo Hijo del elemento al que se aplica
+        <tr><a> </a></tr> tr.firstChild => <a></a>
+
+////////////////////////////////////////////////////////////////
+        Vaciar Localstorage
+        LocalStorage.clear()
+
+////////////////////////////////////////////////////////////////
+
+submit por defecto recarga la página o el navegador
+para evitar esta acción por defecto utilizamos el método .preventDefault()

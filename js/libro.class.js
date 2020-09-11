@@ -5,13 +5,14 @@ class Libro{
     autor = ''
     titulo = ''
 
-    agregar(array){
-        this.autor = array[0]
-        this.titulo = array[1]
-        this.id ++
-        console.log(this.id, this.autor, this.titulo)
+    agregar(infoLibro){
+        this.autor = infoLibro.autor
+        this.titulo = infoLibro.titulo
+        this.id = infoLibro.id
+        // console.log(this.id, this.autor, this.titulo)
 
         let tr = document.createElement('tr')
+        tr.setAttribute('id', `${this.id}`)
         tr.innerHTML = `<th scope="row">${this.id}</th>
         <td>${this.titulo}</td>
         <td>${this.autor}</td>
@@ -37,10 +38,12 @@ class Libro{
         // element sólo puede tomar 2 valores('I', 'BUTTON')
         if(element.tagName === 'I'){
             element.parentElement.parentElement.parentElement.parentElement.remove()
+            LocalStorageOperation.BorrarLibro(element.parentElement.parentElement.parentElement.parentElement.id);
             
             
         }else if(element.tagName === 'BUTTON'){
             element.parentElement.parentElement.parentElement.remove()
+            LocalStorageOperation.BorrarLibro(element.parentElement.parentElement.parentElement.id);
         }
     }
 
